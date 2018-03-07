@@ -1,0 +1,17 @@
+{
+  "query": "mutation import($contentPack: ContentPackTypeInput!) { importContentPack(input:$contentPack) {  name  } }",
+  "operationName": "import",
+  "variables": {
+    "contentPack": {
+      @@include('headers/default.njk')
+      @@include('extracted_fields/default.njk')
+      @@include('queries/default.njk')
+      @@include('alerts/default.njk')
+      @@include('dashboard_sections/default.njk')
+      @@include('agent_classes/default.njk')
+      @@include('alias_fields/default.njk')
+      @@include('alias_rules/default.njk')
+      @@include('footers/default.njk')
+    }
+  }
+}

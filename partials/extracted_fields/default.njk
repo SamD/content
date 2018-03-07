@@ -1,0 +1,2911 @@
+"extractedFields": [
+  {
+    "displayName": "vmw_config_type",
+    "preContext": "\\n",
+    "postContext": "\\(\\d+\\)",
+    "regexValue": "config\\S+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pwg33omzuwox3upfygk000",
+    "constraints": {
+      "searchTerms": "vim.event.VmReconfiguredEvent",
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "vpxd",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_device_changed",
+    "preContext": "Modified:  \\n \n",
+    "postContext": "\\]",
+    "regexValue": "[\\d\\D]*",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pwizlwnfrwkx3dnbqw4z3fmq000000",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "vpxd",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ],
+      "searchTerms": "vim.event.VmReconfiguredEvent"
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_esx_shell_command",
+    "preContext": "shell\\[\\d+\\]: \\[\\S+\\]: ",
+    "postContext": "",
+    "regexValue": ".+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pwk43yl5zwqzlmnrpwg33nnvqw4za0",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "shell",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_esx_shell_user",
+    "preContext": "shell\\[\\d+\\]: \\[",
+    "postContext": "\\]: .+",
+    "regexValue": "\\S+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pwk43yl5zwqzlmnrpxk43foi000000",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "shell",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_esxi_audit",
+    "preContext": "esx\\.audit\\.",
+    "postContext": "(\\)|\\]) ",
+    "regexValue": "\\S+?",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pwk43ynfpwc5lenf2a0000",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "vobd",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_esxi_auth_failed_source",
+    "preContext": "rejected password for user \\S+ from ",
+    "postContext": "",
+    "regexValue": "\\S+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pwk43ynfpwc5lunbpwmyljnrswix3tn52xey3f",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "hostd",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_esxi_auth_failed_user",
+    "preContext": "rejected password for user ",
+    "postContext": " from \\S+",
+    "regexValue": "\\S+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pwk43ynfpwc5lunbpwmyljnrswix3vonsxe000",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "hostd",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_esxi_auth_source",
+    "preContext": "User \\S+@",
+    "postContext": " logged \\w+",
+    "regexValue": "\\S+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pwk43ynfpwc5lunbpxg33vojrwk000",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "hostd",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_esxi_auth_type",
+    "preContext": "User \\S+@\\S+ logged \\w+ as ",
+    "postContext": "",
+    "regexValue": ".*",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pwk43ynfpwc5lunbpxi6lqmu000000",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "hostd",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_esxi_auth_user",
+    "preContext": "User ",
+    "postContext": "@\\S+ logged \\w+",
+    "regexValue": "\\S+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pwk43ynfpwc5lunbpxk43foi000000",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "hostd",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_esxi_cli_command",
+    "preContext": "",
+    "postContext": "(\\[\\]\\)|\\)) \\(wsdl",
+    "regexValue": "vim\\.esxcli(\\.\\w+)+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pwk43ynfpwg3djl5rw63lnmfxgi000",
+    "constraints": {
+      "searchTerms": "VmwareCLI",
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "hostd",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_esxi_connect_source",
+    "preContext": "Connect from ",
+    "postContext": "",
+    "regexValue": "\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pwk43ynfpwg33onzswg5c7onxxk4tdmu000000",
+    "constraints": {
+      "searchTerms": "",
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "vmauthd",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_esxi_connectivity_component",
+    "preContext": "esx\\.problem\\.",
+    "postContext": "\\.connectivity\\.",
+    "regexValue": "\\S+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pwk43ynfpwg33onzswg5djozuxi6k7mnxw24dpnzsw45a0",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "hostd,vobd,vcenter-server",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_esxi_datastore",
+    "preContext": "DsPathToLocalPath conversion: \\[",
+    "postContext": "\\]",
+    "regexValue": ".*?",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pwk43ynfpwiylumfzxi33smu000000",
+    "constraints": {
+      "searchTerms": "scsiCorrelator storage Datastores"
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_esxi_device_id",
+    "preContext": "",
+    "postContext": "",
+    "regexValue": "((naa|eui|sym|sns|t10)\\.[0-9a-z]+|mpx\\.vmhba[0-9]+:C[0-9]+:T[0-9]+:L[0-9]+)",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pwk43ynfpwizlwnfrwkx3jmq000000",
+    "constraints": null,
+    "info": "<span><span>•</span><span>&nbsp;EUI stands for Extended Unique Identifier</span><br>•&nbsp;</span><span>NAA stands for Network Addressing Authority identifier<br></span><span>• SYM is used to represent EMC's Symmetric line of storage arrays<br></span><span>• T10 is used by those following the <a href=\"http://www.t10.org/\">T10 committee</a> SCSI-3 documentation</span><br>\""
+  },
+  {
+    "displayName": "vmw_esxi_drs_from",
+    "preContext": "from ",
+    "postContext": " ",
+    "regexValue": "\\S+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pwk43ynfpwi4ttl5the33n",
+    "constraints": {
+      "searchTerms": "drmlogger executing drm recommended vmotion"
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_esxi_drs_to",
+    "preContext": "to ",
+    "postContext": " ",
+    "regexValue": "\\S+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pwk43ynfpwi4ttl52g6000",
+    "constraints": {
+      "searchTerms": "drmlogger executing drm recommended vmotion"
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_esxi_drs_vm",
+    "preContext": "migrating (vim.VirtualMachine:)?",
+    "postContext": " from",
+    "regexValue": ".*?",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pwk43ynfpwi4ttl53g2000",
+    "constraints": {
+      "searchTerms": "drmlogger executing drm recommended vmotion"
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_esxi_esxupdate_command",
+    "preContext": "info: Command = ",
+    "postContext": "",
+    "regexValue": "\\S+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pwk43ynfpwk43yovygiylumvpwg33nnvqw4za0",
+    "constraints": {
+      "searchTerms": "",
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "esxupdate",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_esxi_firewall_operation",
+    "preContext": "Operation '",
+    "postContext": "' for rule set",
+    "regexValue": "\\w+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pwk43ynfpwm2lsmv3wc3dml5xxazlsmf2gs33o",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "hostd,vobd,vcenter-server",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_esxi_firewall_ruleset",
+    "preContext": "operation '\\w+' for rule set ",
+    "postContext": " ",
+    "regexValue": "\\w+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pwk43ynfpwm2lsmv3wc3dml5zhk3dfonsxi000",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "hostd,vobd,vcenter-server",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_esxi_hostd_auth_user",
+    "preContext": "Accepted password for user ",
+    "postContext": " from",
+    "regexValue": "\\w+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pwk43ynfpwq33torsf6ylvoruf65ltmvza0000",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "Hostd",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_esxi_ip_duplicate",
+    "preContext": "esx.problem.net.vmknic.ip.duplicate] Duplicate IP address detected for ",
+    "postContext": " on interface",
+    "regexValue": "\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pwk43ynfpws4c7mr2xa3djmnqxizi0",
+    "constraints": null,
+    "info": null
+  },
+  {
+    "displayName": "vmw_esxi_iscsi_server",
+    "preContext": "iSCSI discovery to ",
+    "postContext": " on",
+    "regexValue": "\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pwk43ynfpws43donuv643foj3gk4q0",
+    "constraints": {
+      "searchTerms": "esx.problem",
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "vcenter-server,vobd,hostd,vmkwarning,vmkernel",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_esxi_memory_error_status",
+    "preContext": "apei\\.bert\\.memory\\.error\\.",
+    "postContext": "",
+    "regexValue": "\\w+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pwk43ynfpw2zlnn5zhsx3fojzg64s7on2gc5dvom000000",
+    "constraints": null,
+    "info": null
+  },
+  {
+    "displayName": "vmw_esxi_nfs_datastore",
+    "preContext": "\\[esx\\.problem\\.vmfs\\.nfs\\.server\\.\\w+\\] \\S+ /\\S+ \\S+ ",
+    "postContext": "$",
+    "regexValue": "\\S+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pwk43ynfpw4zttl5sgc5dbon2g64tf",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "vcenter-server,vobd,hostd,vmkwarning,vmkernel",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_esxi_nfs_server",
+    "preContext": "\\[esx\\.problem\\.vmfs\\.nfs\\.server\\.\\w+\\] ",
+    "postContext": " /\\S+ \\S+ \\S+",
+    "regexValue": "\\S+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pwk43ynfpw4zttl5zwk4twmvza0000",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "vcenter-server,vobd,hostd,vmkwarning,vmkernel",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_esxi_nfs_status",
+    "preContext": "problem\\.vmfs\\.nfs\\.server\\.",
+    "postContext": "",
+    "regexValue": "\\w+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pwk43ynfpw4zttl5zxiyluovzq0000",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "vcenter-server,vobd,hostd,vmkwarning,vmkernel",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_esxi_nfs_status_code",
+    "preContext": "Received nfsstat3 code ",
+    "postContext": " for the procedure",
+    "regexValue": "-?\\d+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pwk43ynfpw4zttl5zxiyluovzv6y3pmrsq0000",
+    "constraints": null,
+    "info": null
+  },
+  {
+    "displayName": "vmw_esxi_nsx_severity",
+    "preContext": " nsx.*?: \\[(.*? level=\")?",
+    "postContext": "(\")?\\]",
+    "regexValue": "(debug|error|info|warn|critical|fatal|trace)",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pwk43ynfpw443yl5zwk5tfojuxi6i0",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "nsx*",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_esxi_path_id",
+    "preContext": "path (\")?",
+    "postContext": "",
+    "regexValue": "vmhba([0-9]+:C[0-9]+:T[0-9]+:L[0-9]+|[0-9]+:[0-9]+:[0-9]+)",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pwk43ynfpxaylunbpwsza0",
+    "constraints": null,
+    "info": null
+  },
+  {
+    "displayName": "vmw_esxi_permission_event",
+    "preContext": "role (is | ')",
+    "postContext": "('\\. Propagate|\\, propagation)",
+    "regexValue": ".*",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pwk43ynfpxazlsnvuxg43jn5xf6zlwmvxhi000",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "hostd,vpxa,vpxd,vobd,vmkernel,vmkwarning",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_esxi_portgroup",
+    "preContext": "to ",
+    "postContext": "\\, portID",
+    "regexValue": ".*",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pwk43ynfpxa33sortxe33voa000000",
+    "constraints": {
+      "searchTerms": "",
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "vmkernel",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_esxi_problem",
+    "preContext": "esx\\.problem\\.",
+    "postContext": "",
+    "regexValue": "\\w+(\\.\\w+)*",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pwk43ynfpxa4tpmjwgk3i0",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "vcenter-server,vobd,hostd,vmkwarning,vmkernel",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_esxi_problem_datastores",
+    "preContext": "datastores( \\(if any\\):|:)? \"",
+    "postContext": "\"",
+    "regexValue": "\\S+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pwk43ynfpxa4tpmjwgk3k7mrqxiyltorxxezlt",
+    "constraints": {
+      "searchTerms": "esx.problem",
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "vcenter-server,vobd,hostd,vmkwarning,vmkernel",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_esxi_scsi_additional_sense_code",
+    "preContext": "(Possible|Valid) sense data: 0x[A-Fa-f0-9]+ ",
+    "postContext": "",
+    "regexValue": "[xA-Fa-f0-9]+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pwk43ynfpxgy3tnfpwczdenf2gs33omfwf643fnzzwkx3dn5sgk000",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "vmkernel",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_esxi_scsi_additional_sense_code_qualifier",
+    "preContext": "(Possible|Valid) sense data: 0x[A-Fa-f0-9]+ 0x[A-Fa-f0-9]+ ",
+    "postContext": "",
+    "regexValue": "[xA-Fa-f0-9]+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pwk43ynfpxgy3tnfpwczdenf2gs33omfwf643fnzzwkx3dn5sgkx3rovqwy2lgnfsxe000",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "vmkernel",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_esxi_scsi_device_status",
+    "preContext": "failed(:)?.*H:0x[A-Fa-f0-9]+ D:",
+    "postContext": " P:0x[A-Fa-f0-9]+ (Possible|Valid) sense data:",
+    "regexValue": "0x[A-Fa-f0-9]+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pwk43ynfpxgy3tnfpwizlwnfrwkx3torqxi5lt",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "vmkernel",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_esxi_scsi_host_status",
+    "preContext": "failed(:)?.*H:",
+    "postContext": " D:0x[A-Fa-f0-9]+ P:0x[A-Fa-f0-9]+ (Possible|Valid) sense data:",
+    "regexValue": "0x[A-Fa-f0-9]+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pwk43ynfpxgy3tnfpwq33torpxg5dbor2xg000",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "vmkernel",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_esxi_scsi_latency",
+    "preContext": "microseconds to ",
+    "postContext": " microseconds",
+    "regexValue": "-?\\d+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pwk43ynfpxgy3tnfpwyylumvxgg6i0",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "vcenter-server,vobd,hostd,vmkwarning,vmkernel",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_esxi_scsi_plugin_status",
+    "preContext": "failed(:)?.*H:0x[A-Fa-f0-9]+ D:0x[A-Fa-f0-9]+ P:",
+    "postContext": " (Possible|Valid) sense data:",
+    "regexValue": "0x[A-Fa-f0-9]+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pwk43ynfpxgy3tnfpxa3dvm5uw4x3torqxi5lt",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "vmkernel",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_esxi_scsi_sense_code",
+    "preContext": "(Possible|Valid) sense data: ",
+    "postContext": "",
+    "regexValue": "[xA-Fa-f0-9]+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pwk43ynfpxgy3tnfpxgzloonsv6y3pmrsq0000",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "vmkernel",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_esxi_scsi_sense_data",
+    "preContext": "(Possible|Valid) sense data: ",
+    "postContext": "\\.",
+    "regexValue": ".*?",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pwk43ynfpxgy3tnfpxgzloonsv6zdborqq0000",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "vmkernel",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_esxi_severity",
+    "preContext": "(vpxa|rhttpproxy|hostd|hostd-probe|vmkwarning): (\\[\\S+ |\\S+?\\))?",
+    "postContext": "",
+    "regexValue": "(verbose|error|trivia|info|warning|quiet|debug|critical|fatal)",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pwk43ynfpxgzlwmvzgs5dz",
+    "constraints": {
+      "filters": [
+        {
+          "hidden": false,
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "vpxa,rhttpproxy,hostd,vmkwarning,hostd-probe",
+          "fieldType": "NUMBER",
+          "isExtracted": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_esxi_snapshot_operation",
+    "preContext": "vmsvc.vm:/vmfs/volumes/.*?\\] ",
+    "postContext": "( after)? snapshot",
+    "regexValue": "(?!Reading)(Consolidate disks|\\w+)",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pwk43ynfpxg3tbobzwq33ul5xxazlsmf2gs33o",
+    "constraints": {
+      "searchTerms": "",
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "hostd",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_esxi_snmp_trap_name",
+    "preContext": "'Snmpsvc.env'\\] GenerateVarbinds indication ",
+    "postContext": "\\(\\S+\\)",
+    "regexValue": "\\w+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pwk43ynfpxg3tnobpxi4tbobpw4ylnmu000000",
+    "constraints": {
+      "searchTerms": "",
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "hostd",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_esxi_snmp_trap_oid",
+    "preContext": "'Snmpsvc.env'\\] GenerateVarbinds indication \\w+\\(",
+    "postContext": "\\)",
+    "regexValue": "\\S+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pwk43ynfpxg3tnobpxi4tbobpw62le",
+    "constraints": {
+      "searchTerms": "",
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "hostd",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_esxi_sub",
+    "preContext": "sub=",
+    "postContext": "( |\\]|:)",
+    "regexValue": "\\S+?",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pwk43ynfpxg5lc",
+    "constraints": {
+      "searchTerms": "",
+      "filters": [
+        {
+          "hidden": false,
+          "disableRemove": false,
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "hostd,vpxa,vpxd,vobd,vmkernel,vmkwarning,fdm",
+          "fieldType": "NUMBER",
+          "isExtracted": false
+        }
+      ]
+    },
+    "info": "opid can be used for transaction monitoring"
+  },
+  {
+    "displayName": "vmw_esxi_uptime",
+    "preContext": "heartbeat: up ",
+    "postContext": "d\\d+h\\d+m\\d+s",
+    "regexValue": "-?\\d+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pwk43ynfpxk4dunfwwk000",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "heartbeat",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_esxi_vim_datastore",
+    "preContext": "vim.Datastore:(vsan:)?",
+    "postContext": "('|/|:| )",
+    "regexValue": "([a-z]|[0-9]|){8}-([a-z]|[0-9]|){8}-([a-z]|[0-9]|){4}-([a-z]|[0-9]|){12}",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pwk43ynfpxm2lnl5sgc5dbon2g64tf",
+    "constraints": {
+      "filters": [
+        {
+          "hidden": false,
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "vpxa,hostd,vmkwarning,vcenter-server,vobd,vmkernel",
+          "fieldType": "NUMBER",
+          "isExtracted": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_esxi_vm_name",
+    "preContext": "/vmfs/volumes/.*?/",
+    "postContext": "/",
+    "regexValue": ".*?",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pwk43ynfpxm3k7nzqw2zi0",
+    "constraints": null,
+    "info": null
+  },
+  {
+    "displayName": "vmw_esxi_vmdowntime",
+    "preContext": "vmDowntime = ",
+    "postContext": "",
+    "regexValue": "-?\\d+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pwk43ynfpxm3len53w45djnvsq0000",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "hostd",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_esxi_vmfs_heartbeat_datastore",
+    "preContext": "\\[esx\\.problem\\.vmfs\\.heartbeat\\.\\w+\\] \\S+ ",
+    "postContext": "$",
+    "regexValue": "\\S+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pwk43ynfpxm3lgonpwqzlboj2gezlborpwiylumfzxi33smu000000",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "vcenter-server,vobd,hostd,vmkwarning,vmkernel",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_esxi_vmfs_label",
+    "preContext": "Label:",
+    "postContext": "\\,logicalDevice",
+    "regexValue": "\\S+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pwk43ynfpxm3lgonpwyylcmvwa0000",
+    "constraints": {
+      "searchTerms": "VmFileSystem Label logicalDevice"
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_esxi_vmfs_volume",
+    "preContext": "/vmfs/volumes/",
+    "postContext": "(/|$)",
+    "regexValue": "\\S+?",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pwk43ynfpxm3lgonpxm33movwwk000",
+    "constraints": null,
+    "info": null
+  },
+  {
+    "displayName": "vmw_esxi_vmfs_volume_guid",
+    "preContext": "\\[esx\\.problem\\.vmfs\\.heartbeat\\.timedout\\] ",
+    "postContext": "",
+    "regexValue": "[0-9a-z\\-]+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pwk43ynfpxm3lgonpxm33movwwkx3hovuwi000",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "vcenter-server,vobd,hostd,vmkwarning,vmkernel",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_esxi_vmk_component",
+    "preContext": ": cpu\\d+:\\d+.*?\\)(WARNING: )?",
+    "postContext": ": ",
+    "regexValue": "\\w+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pwk43ynfpxm3lll5rw63lqn5xgk3tu",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "vmkernel,vmkwarning",
+          "fieldType": "STRING",
+          "isExtracted": false,
+          "hidden": false,
+          "disableRemove": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_esxi_vmk_world",
+    "preContext": ": cpu\\d+:",
+    "postContext": "",
+    "regexValue": "\\d+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pwk43ynfpxm3lll53w64tmmq000000",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "vmkernel,vmkwarning",
+          "fieldType": "STRING",
+          "isExtracted": false,
+          "hidden": false,
+          "disableRemove": false
+        }
+      ]
+    },
+    "info": "For more information see <a href=\"http://kb.vmware.com/kb/1001101\">KB&nbsp;1001101</a>"
+  },
+  {
+    "displayName": "vmw_esxi_vmkernel_net_vm_name",
+    "preContext": "connected ",
+    "postContext": " eth\\d+",
+    "regexValue": ".*?",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pwk43ynfpxm3llmvzg4zlml5xgk5c7ozwv63tbnvsq0000",
+    "constraints": {
+      "searchTerms": "net",
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "vmkernel",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_esxi_vmnic",
+    "preContext": "",
+    "postContext": "",
+    "regexValue": "vmnic[0-9]+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pwk43ynfpxm3lonfrq0000",
+    "constraints": {
+      "searchTerms": "vmnic*"
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_esxi_vmotion_bandwidth",
+    "preContext": "network bandwidth (~)?",
+    "postContext": " MB/s",
+    "regexValue": "-?\\d*\\.?\\d+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pwk43ynfpxm3lporuw63s7mjqw4zdxnfshi2a0",
+    "constraints": {
+      "searchTerms": "VMotion*",
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "vmkernel",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_esxi_vmotion_opid",
+    "preContext": "VMotionStatusCb \\[",
+    "postContext": "\\]",
+    "regexValue": "-?\\d+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pwk43ynfpxm3lporuw63s7n5ygsza0",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "hostd",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_esxi_vmotion_type",
+    "preContext": "migrateType = ",
+    "postContext": "",
+    "regexValue": "\\w+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pwk43ynfpxm3lporuw63s7or4xazi0",
+    "constraints": {
+      "searchTerms": "user",
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "hostd",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_esxi_vmotiondst_opid",
+    "preContext": "VMotionDst \\(",
+    "postContext": "\\) opID",
+    "regexValue": "-?\\d+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pwk43ynfpxm3lporuw63teon2f633qnfsa0000",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "hostd",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_esxi_vmprecopybandwidth",
+    "preContext": "vmPrecopyBandwidth = ",
+    "postContext": "",
+    "regexValue": "-?\\d+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pwk43ynfpxm3lqojswg33qpfrgc3teo5uwi5di",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "hostd",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_esxi_vmprecopystuntime",
+    "preContext": "vmPrecopyStunTime = ",
+    "postContext": "",
+    "regexValue": "-?\\d+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pwk43ynfpxm3lqojswg33qpfzxi5looruw2zi0",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "hostd",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_esxi_vms",
+    "preContext": "heartbeat: up \\w+, ",
+    "postContext": " VM(s)?",
+    "regexValue": "-?\\d+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pwk43ynfpxm3lt",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "heartbeat",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_esxi_vobd_filesystem_id",
+    "preContext": "Device or filesystem with identifier \\[",
+    "postContext": "\\] ",
+    "regexValue": "\\S+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pwk43ynfpxm33cmrpwm2lmmvzxs43umvwv62le",
+    "constraints": {
+      "searchTerms": "vobd"
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_esxi_vswitch",
+    "preContext": "virtual switch \"",
+    "postContext": "\"",
+    "regexValue": "\\w+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pwk43ynfpxm43xnf2gg2a0",
+    "constraints": null,
+    "info": null
+  },
+  {
+    "displayName": "vmw_ha_component",
+    "preContext": "Fdm: \\[.*?\\] (\\[)?",
+    "postContext": "::\\w+",
+    "regexValue": "\\w+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pwqyk7mnxw24dpnzsw45a0",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "fdm",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_ha_component_operation",
+    "preContext": "Fdm: \\[.*?\\] (\\[)?\\w+::",
+    "postContext": "",
+    "regexValue": "\\w+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pwqyk7mnxw24dpnzsw45c7n5ygk4tboruw63q0",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "fdm",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_ha_guesthb",
+    "preContext": "guestHB=",
+    "postContext": "",
+    "regexValue": "\\w+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pwqyk7m52wk43unbra0000",
+    "constraints": {
+      "searchTerms": "",
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "fdm",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_ha_slave",
+    "preContext": "slave (@ )?",
+    "postContext": "",
+    "regexValue": "hostd-\\d+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pwqyk7onwgc5tf",
+    "constraints": {
+      "searchTerms": "cluster",
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "fdm",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_hatask",
+    "preContext": "",
+    "postContext": "",
+    "regexValue": "haTask-\\S+-(\\d)+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pwqylumfzww000",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "hostd,vpxa,vpxd,vobd,vmkernel,vmkwarning,fdm",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_hostd_vmotion_id",
+    "preContext": "vcsvc.\\w+ \\(",
+    "postContext": "\\)",
+    "regexValue": "-?\\d+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pwq33torsf65tnn52gs33ol5uwi000",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "hostd",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_opid",
+    "preContext": "opID=",
+    "postContext": "( |\\])",
+    "regexValue": "\\S+?",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pw64djmq000000",
+    "constraints": {
+      "searchTerms": "",
+      "filters": [
+        {
+          "hidden": false,
+          "disableRemove": false,
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "hostd,vpxa,vpxd,vobd,vmkernel,vmkwarning,fdm",
+          "fieldType": "NUMBER",
+          "isExtracted": false
+        }
+      ]
+    },
+    "info": "opid can be used for transaction monitoring"
+  },
+  {
+    "displayName": "vmw_recordop",
+    "preContext": "RecordOp ",
+    "postContext": ": ",
+    "regexValue": "\\w+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxezldn5zgi33q",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "vpxa,fdm",
+          "fieldType": "STRING",
+          "isExtracted": false,
+          "hidden": false,
+          "disableRemove": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_recordop_action",
+    "preContext": "RecordOp \\w+: ",
+    "postContext": "(,)? ",
+    "regexValue": "\\S+?",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxezldn5zgi33ql5qwg5djn5xa0000",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "vpxa,fdm",
+          "fieldType": "STRING",
+          "isExtracted": false,
+          "hidden": false,
+          "disableRemove": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_replication_problem",
+    "preContext": "ReplicationManager\\.",
+    "postContext": "\\:",
+    "regexValue": "\\w+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxezlqnruwgylunfxw4x3qojxwe3dfnu000000",
+    "constraints": {
+      "searchTerms": "SessionManager"
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_rsv_source",
+    "preContext": "Long VMFS\\S* rsv time on '",
+    "postContext": "' \\(held for",
+    "regexValue": "\\S+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxe43wl5zw65lsmnsq0000",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "vmkernel",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_rsv_time",
+    "preContext": "Long VMFS\\S* rsv time on .*held for ",
+    "postContext": " msecs",
+    "regexValue": "-?\\d+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxe43wl52gs3lf",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "vmkernel",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_scsi_path_state",
+    "preContext": "\\[vob\\.scsi\\.scsipath\\.pathstate\\.",
+    "postContext": "\\]",
+    "regexValue": "\\S+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxgy3tnfpxaylunbpxg5dborsq0000",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "vobd",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_scsideviceio_pid",
+    "preContext": "ScsiDeviceIO: ",
+    "postContext": "",
+    "regexValue": "-?\\d+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxgy3tnfsgk5tjmnsws327obuwi000",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "vmkernel,vmkwarning",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_severity_65",
+    "preContext": " ",
+    "postContext": "( |\\])",
+    "regexValue": "DEBUG|INFO|TRACE|ERROR|WARNING|TRIVIA|VERBOSE",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxgzlwmvzgs5dzl43dk000",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "vmw_product",
+          "displayName": "vmw_product",
+          "operator": "CONTAINS",
+          "value": "sso",
+          "fieldType": "STRING",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_task_status",
+    "preContext": "Task Completed : .* Status ",
+    "postContext": "$",
+    "regexValue": "\\w+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxiyltnnpxg5dbor2xg000",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "hostd",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_user",
+    "preContext": "user=(vpxuser:)?",
+    "postContext": "( |\\])",
+    "regexValue": "\\S+?",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxk43foi000000",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "hostd,vpxa,vpxd,vobd,vmkernel,vmkwarning",
+          "fieldType": "STRING",
+          "isExtracted": false,
+          "hidden": false,
+          "disableRemove": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_vc_alarm_source",
+    "preContext": "alarm '.* (on|entity) ",
+    "postContext": " (was|triggered|changed)",
+    "regexValue": ".*",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxmy27mfwgc4tnl5zw65lsmnsq0000",
+    "constraints": {
+      "searchTerms": "",
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "vcenter-server",
+          "fieldType": "STRING",
+          "isExtracted": false,
+          "hidden": false,
+          "disableRemove": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_vc_alarm_status",
+    "preContext": "changed from \\w+ to ",
+    "postContext": "$",
+    "regexValue": "\\w+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxmy27mfwgc4tnl5zxiyluovzq0000",
+    "constraints": {
+      "searchTerms": "alarm",
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "vcenter-server",
+          "fieldType": "STRING",
+          "isExtracted": false,
+          "hidden": false,
+          "disableRemove": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_vc_alarm_type",
+    "preContext": "alarm '",
+    "postContext": "' on",
+    "regexValue": ".*",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxmy27mfwgc4tnl52hs4df",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "vcenter-server",
+          "fieldType": "STRING",
+          "isExtracted": false,
+          "hidden": false,
+          "disableRemove": false
+        }
+      ],
+      "searchTerms": "changed from to"
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_vc_api_invocations",
+    "preContext": "number of API invocations: ",
+    "postContext": "",
+    "regexValue": "-?\\d+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxmy27mfygsx3jnz3g6y3boruw63tt",
+    "constraints": {
+      "searchTerms": "",
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "vcenter-server",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_vc_auth_failed_source",
+    "preContext": "cannot login \\S+@",
+    "postContext": "",
+    "regexValue": "\\S+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxmy27mf2xi2c7mzqws3dfmrpxg33vojrwk000",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "vcenter-server",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_vc_auth_failed_user",
+    "preContext": "cannot login ",
+    "postContext": "@\\S+",
+    "regexValue": "\\S+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxmy27mf2xi2c7mzqws3dfmrpxk43foi000000",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "vcenter-server",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_vc_auth_source",
+    "preContext": "User \\S+@",
+    "postContext": " logged \\w+",
+    "regexValue": "\\S+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxmy27mf2xi2c7onxxk4tdmu000000",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "vcenter-server",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_vc_auth_type",
+    "preContext": "User \\S+@\\S+ logged \\w+ as ",
+    "postContext": "( \\(|$)",
+    "regexValue": ".*?",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxmy27mf2xi2c7or4xazi0",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "vcenter-server",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_vc_auth_user",
+    "preContext": "User ",
+    "postContext": "@\\S+ logged \\w+",
+    "regexValue": "\\S+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxmy27mf2xi2c7ovzwk4q0",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "vcenter-server",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_vc_custom_field_name",
+    "preContext": "Changed custom field \\w+ on ",
+    "postContext": " in ",
+    "regexValue": ".*",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxmy27mn2xg5dpnvpwm2lfnrsf63tbnvsq0000",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "vcenter-server",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_vc_custom_field_on_vm",
+    "preContext": "Changed custom field ",
+    "postContext": " on ",
+    "regexValue": "\\w+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxmy27mn2xg5dpnvpwm2lfnrsf633ol53g2000",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "vcenter-server",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_vc_db_execution_time",
+    "preContext": "\\[VdbStatement\\] Execution elapsed time: ",
+    "postContext": " ms",
+    "regexValue": "-?\\d+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxmy27mrrf6zlymvrxk5djn5xf65djnvsq0000",
+    "constraints": null,
+    "info": null
+  },
+  {
+    "displayName": "vmw_vc_drs_migrate_cluster",
+    "preContext": "cluster ",
+    "postContext": " in",
+    "regexValue": "\\S+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxmy27mrzhgx3nnftxeylumvpwg3dvon2gk4q0",
+    "constraints": {
+      "searchTerms": "drs migrated",
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "vcenter-server",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_vc_drs_migrate_datastore",
+    "preContext": "in ",
+    "postContext": "$",
+    "regexValue": "\\S+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxmy27mrzhgx3nnftxeylumvpwiylumfzxi33smu000000",
+    "constraints": {
+      "searchTerms": "drs migrated cluster",
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "vcenter-server",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_vc_duplicate_ip_vm1",
+    "preContext": "conflict between vm \\[",
+    "postContext": "( \\(\\S+\\))?\\] \\(moId",
+    "regexValue": "\\w+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxmy27mr2xa3djmnqxizk7nfyf65tnge000000",
+    "constraints": {
+      "searchTerms": "detected IP ",
+      "filters": [
+        {
+          "internalName": "filepath",
+          "displayName": "filepath",
+          "operator": "CONTAINS",
+          "value": "vpxd",
+          "fieldType": "STRING",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_vc_duplicate_ip_vm2",
+    "preContext": "and entity \\[",
+    "postContext": "( \\(\\S+\\))?\\] \\(moId",
+    "regexValue": "\\w+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxmy27mr2xa3djmnqxizk7nfyf65tngi000000",
+    "constraints": {
+      "searchTerms": "detected IP ",
+      "filters": [
+        {
+          "internalName": "filepath",
+          "displayName": "filepath",
+          "operator": "CONTAINS",
+          "value": "vpxd",
+          "fieldType": "STRING",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_vc_file_action",
+    "preContext": "(path|directory) ",
+    "postContext": " was initiated",
+    "regexValue": ".*",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxmy27mzuwyzk7mfrxi2lpny000000",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "vcenter-server",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_vc_iscsi_error",
+    "preContext": "Target returned login error of: ",
+    "postContext": "\\.",
+    "regexValue": "-?\\d+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxmy27nfzwg43jl5sxe4tpoi000000",
+    "constraints": null,
+    "info": null
+  },
+  {
+    "displayName": "vmw_vc_lock_object",
+    "preContext": "lock ",
+    "postContext": " mode \\w+ held",
+    "regexValue": "[a-zA-Z]+\\-[a-zA-Z0-9]+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxmy27nrxwg227n5rguzldoq000000",
+    "constraints": {
+      "searchTerms": "molock"
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_vc_lock_state",
+    "preContext": "lock \\S+ mode ",
+    "postContext": " held",
+    "regexValue": "\\w+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxmy27nrxwg227on2gc5df",
+    "constraints": {
+      "searchTerms": "molock"
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_vc_long_conn_time_ip",
+    "preContext": "ClientAdapterBase::InvokeOnSoap: \\(",
+    "postContext": "\\, vim",
+    "regexValue": "\\S+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxmy27nrxw4z27mnxw43s7oruw2zk7nfya0000",
+    "constraints": null,
+    "info": "This field will only be seen for when the connection time of the IP is greater than 1 second."
+  },
+  {
+    "displayName": "vmw_vc_managed_host",
+    "preContext": "host ",
+    "postContext": "",
+    "regexValue": "\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxmy27nvqw4ylhmvsf62dpon2a0000",
+    "constraints": {
+      "searchTerms": "opid"
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_vc_managed_host_id",
+    "preContext": "",
+    "postContext": "",
+    "regexValue": "host\\-\\d+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxmy27nvqw4ylhmvsf62dpon2f62le",
+    "constraints": {
+      "searchTerms": "opid"
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_vc_mks_host",
+    "preContext": "A ticket for ",
+    "postContext": " of type MKS",
+    "regexValue": ".*",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxmy27nvvxgx3in5zxi000",
+    "constraints": {
+      "searchTerms": "",
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "vcenter-server",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_vc_msg_info",
+    "preContext": "on \\S+ in \\S+: ",
+    "postContext": "\\. ",
+    "regexValue": ".*?",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxmy27nvzwox3jnztg6000",
+    "constraints": {
+      "searchTerms": "message on",
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "vcenter-server",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_vc_msg_vm",
+    "preContext": "message on ",
+    "postContext": " on \\S+ in ",
+    "regexValue": ".*?",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxmy27nvzwox3wnu000000",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "vcenter-server",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_vc_power_host",
+    "preContext": "on\\s+(host)? ",
+    "postContext": " in \\S+ is ",
+    "regexValue": "\\S+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxmy27obxxozlsl5ug643u",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "vcenter-server,hostd",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_vc_power_status",
+    "preContext": "on .* in .* is ",
+    "postContext": "$",
+    "regexValue": "(starting|stopping|powered off)",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxmy27obxxozlsl5zxiyluovzq0000",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "vcenter-server,hostd",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_vc_power_vm_name",
+    "preContext": ": ",
+    "postContext": " on .* in \\S+ is ",
+    "regexValue": ".*",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxmy27obxxozlsl53g2x3omfwwk000",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "vcenter-server,hostd",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_vc_processorcpuusage",
+    "preContext": "/ProcessStats/ProcessorCpuUsage/mean ",
+    "postContext": "",
+    "regexValue": "-?\\d+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxmy27obzg6y3fonzw64tdob2xk43bm5sq0000",
+    "constraints": null,
+    "info": null
+  },
+  {
+    "displayName": "vmw_vc_reconfig_on",
+    "preContext": "on ",
+    "postContext": " in",
+    "regexValue": "\\S+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxmy27ojswg33omzuwox3pny000000",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "vc_event_type",
+          "displayName": "vc_event_type",
+          "operator": "CONTAINS",
+          "value": "vmreconfiguredevent",
+          "fieldType": "STRING",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ],
+      "searchTerms": "reconfigured"
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_vc_rhttpproxy_error",
+    "preContext": "\\(",
+    "postContext": "\\)(\\.|$)",
+    "regexValue": "\\w.*",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxmy27ojuhi5dqobzg66dzl5sxe4tpoi000000",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "filepath",
+          "displayName": "filepath",
+          "operator": "CONTAINS",
+          "value": "rhttpproxy",
+          "fieldType": "STRING",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_vc_sql_table",
+    "preContext": "FROM ",
+    "postContext": "( WHERE|$)",
+    "regexValue": ".*?",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxmy27onywyx3umfrgyzi0",
+    "constraints": {
+      "searchTerms": "VdbStatement SQL execution took too long"
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_vc_task_method",
+    "preContext": "Task .*\\.[a-zA-Z]+\\.",
+    "postContext": "-\\d+ Status ",
+    "regexValue": "\\w+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxmy27orqxg227nvsxi2dpmq000000",
+    "constraints": {
+      "searchTerms": "",
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "Hostd",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_vc_task_object",
+    "preContext": "BEGIN task\\-\\d+ \\-\\- ",
+    "postContext": " \\-\\-",
+    "regexValue": "\\S+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxmy27orqxg227n5rguzldoq000000",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "vpxa",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": "Note this could be a component like host or an object ID like host-39"
+  },
+  {
+    "displayName": "vmw_vc_task_on_vm",
+    "preContext": "\\[VpxLRO\\] \\-\\- BEGIN task\\-\\d+ \\-\\- vm\\-",
+    "postContext": " \\-\\-",
+    "regexValue": "\\S+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxmy27orqxg227n5xf65tn",
+    "constraints": null,
+    "info": null
+  },
+  {
+    "displayName": "vmw_vc_task_operation",
+    "preContext": "BEGIN task\\-\\d+ \\-\\- \\S+ \\-\\- ",
+    "postContext": " \\-\\-",
+    "regexValue": "\\S+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxmy27orqxg227n5ygk4tboruw63q0",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "vpxa",
+          "fieldType": "STRING",
+          "isExtracted": false,
+          "hidden": false,
+          "disableRemove": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_vc_task_status",
+    "preContext": "Status ",
+    "postContext": "$",
+    "regexValue": "\\w+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxmy27orqxg227on2gc5dvom000000",
+    "constraints": {
+      "searchTerms": "Task Completed",
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "hostd",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_vc_task_type",
+    "preContext": "task: ",
+    "postContext": "$",
+    "regexValue": ".*",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxmy27orqxg227or4xazi0",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "vcenter-server",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_vc_triggeredfilterscount",
+    "preContext": "/PropertyCollector/TriggeredFiltersCount/total ",
+    "postContext": "",
+    "regexValue": "-?\\d+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxmy27orzgsz3hmvzgkzdgnfwhizlsonrw65looq000000",
+    "constraints": null,
+    "info": null
+  },
+  {
+    "displayName": "vmw_vc_vmodl_fault",
+    "preContext": "vmodl\\.fault\\.",
+    "postContext": ":",
+    "regexValue": "\\w+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxmy27ozww6zdml5tgc5lmoq000000",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "vpxa",
+          "fieldType": "STRING",
+          "isExtracted": false,
+          "hidden": false,
+          "disableRemove": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_vc_vmotion_destination",
+    "preContext": "updating port \\[\\d+\\] proxy host to \\[",
+    "postContext": "\\]",
+    "regexValue": "\\S+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxmy27ozww65djn5xf6zdfon2gs3tboruw63q0",
+    "constraints": null,
+    "info": null
+  },
+  {
+    "displayName": "vmw_vc_vmotion_from",
+    "preContext": "from ",
+    "postContext": "\\, ",
+    "regexValue": "\\S+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxmy27ozww65djn5xf6ztsn5wq0000",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "vc_event_type",
+          "displayName": "vc_event_type",
+          "operator": "CONTAINS",
+          "value": "com.vmware.vim25.vmmigratedevent",
+          "fieldType": "STRING",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_vc_vmotion_precopystuntime",
+    "preContext": "Set source task result precopyStunTime to ",
+    "postContext": "",
+    "regexValue": "-?\\d+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxmy27ozww65djn5xf64dsmvrw64dzon2hk3tunfwwk000",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "hostd",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_vc_vmotion_to",
+    "preContext": "to ",
+    "postContext": "\\, ",
+    "regexValue": "\\S+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxmy27ozww65djn5xf65dp",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "vc_event_type",
+          "displayName": "vc_event_type",
+          "operator": "CONTAINS",
+          "value": "com.vmware.vim25.vmmigratedevent",
+          "fieldType": "STRING",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_vc_vpxd_clientip",
+    "preContext": "/Username='\\S+?'/",
+    "postContext": "/",
+    "regexValue": "ClientIP='\\S+?'",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxmy27ozyhqzc7mnwgszlooruxa000",
+    "constraints": {
+      "searchTerms": "username clientip",
+      "filters": [
+        {
+          "internalName": "filepath",
+          "displayName": "filepath",
+          "operator": "CONTAINS",
+          "value": "vpxd-profiler*",
+          "fieldType": "STRING",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_vc_vpxd_hearbeat_host",
+    "preContext": "Missed \\d+ heartbeats for host ",
+    "postContext": "",
+    "regexValue": "\\S+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxmy27ozyhqzc7nbswc4tcmvqxix3in5zxi000",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "vpxd",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_vc_vpxd_querystats_sessionid",
+    "preContext": "vim.PerformanceManager.queryStats(:| \\-\\-) ",
+    "postContext": "\\(",
+    "regexValue": "\\S+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxmy27ozyhqzc7of2wk4tzon2gc5dtl5zwk43tnfxw42le",
+    "constraints": null,
+    "info": null
+  },
+  {
+    "displayName": "vmw_vc_vpxd_username",
+    "preContext": "/",
+    "postContext": "/ClientIP='\\S+?'",
+    "regexValue": "Username='\\S+?'",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxmy27ozyhqzc7ovzwk4tomfwwk000",
+    "constraints": {
+      "searchTerms": "username clientip",
+      "filters": [
+        {
+          "internalName": "filepath",
+          "displayName": "filepath",
+          "operator": "CONTAINS",
+          "value": "vpxd-profiler*",
+          "fieldType": "STRING",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_vim_fault_type",
+    "preContext": "vim\\.fault\\.",
+    "postContext": "",
+    "regexValue": "\\w+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxm2lnl5tgc5lmorpxi6lqmu000000",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "vpxd,vpxa,hostd,vobd,vmkernel,vmkwarning",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_vm_heartbeat_source",
+    "preContext": "vm:/vmfs/volumes/(\\S+/){2}",
+    "postContext": "\\.vmx'\\] Updating current heartbeatStatus:",
+    "regexValue": "\\S+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxm3k7nbswc4tumjswc5c7onxxk4tdmu000000",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "hostd",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_vm_heartbeat_status",
+    "preContext": "Updating current heartbeatStatus: ",
+    "postContext": "$",
+    "regexValue": "\\w+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxm3k7nbswc4tumjswc5c7on2gc5dvom000000",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "hostd",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_vm_state_transition_post",
+    "preContext": "State Transition \\(\\S+ -> ",
+    "postContext": "\\)",
+    "regexValue": ".*",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxm3k7on2gc5dfl52heyloonuxi2lpnzpxa33toq000000",
+    "constraints": {
+      "searchTerms": "vmx",
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "hostd",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_vm_state_transition_pre",
+    "preContext": "State Transition \\(",
+    "postContext": " -> \\S+\\)",
+    "regexValue": ".*",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxm3k7on2gc5dfl52heyloonuxi2lpnzpxa4tf",
+    "constraints": {
+      "searchTerms": "vmx",
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "hostd",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_vm_vmx_name",
+    "preContext": "vm(Path=|:|=| )/vmfs/volumes/(.*?/){1,2}",
+    "postContext": "\\.vmx",
+    "regexValue": ".*?",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxm3k7ozwxqx3omfwwk000",
+    "constraints": {
+      "filters": [
+        {
+          "hidden": false,
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "hostd*,fdm,vpxa",
+          "fieldType": "NUMBER",
+          "isExtracted": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_vmfs_heartbeat_status",
+    "preContext": "vmfs\\.heartbeat\\.",
+    "postContext": "",
+    "regexValue": "\\w+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxm3lgonpwqzlboj2gezlborpxg5dbor2xg000",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "hostd,vobd",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_vmkernel_vmotion_id",
+    "preContext": "VMotion(\\w+)?: \\d+: ",
+    "postContext": " ",
+    "regexValue": "-?\\d+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxm3llmvzg4zlml53g233unfxw4x3jmq000000",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "vmkernel",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ],
+      "searchTerms": "cpu* vmotion*"
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_vmotion_failed_reason",
+    "preContext": "VMotionLastStatusCb: Failed with error \\d+: ",
+    "postContext": "",
+    "regexValue": ".*",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxm3lporuw63s7mzqws3dfmrpxezlbonxw4000",
+    "constraints": null,
+    "info": null
+  },
+  {
+    "displayName": "vmw_vmotion_status",
+    "preContext": "VMotionLastStatusCb:: hostlog state changed from \\w+ to ",
+    "postContext": "",
+    "regexValue": "\\w+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxm3lporuw63s7on2gc5dvom000000",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "hostd",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_vob_component",
+    "preContext": "vobd:  \\[",
+    "postContext": "\\] [0-9]+us:",
+    "regexValue": "\\w+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxm33cl5rw63lqn5xgk3tu",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "vobd",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_vob_event_type",
+    "preContext": "[0-9]+us: \\[(vob\\.\\w+\\.|esx\\.\\w+\\.)",
+    "postContext": "\\]",
+    "regexValue": "\\S+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxm33cl5sxmzloorpxi6lqmu000000",
+    "constraints": {
+      "searchTerms": "",
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "vobd",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_volume_name",
+    "preContext": "(\\[esx\\.problem\\.vmfs\\.heartbeat\\.timedout\\] [0-9a-z\\-]+ )",
+    "postContext": "",
+    "regexValue": "[0-9a-zA-Z\\-\\_]+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxm33movwwkx3omfwwk000",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "vcenter-server,vobd,hostd,vmkwarning,vmkernel",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_vr_delta_duration",
+    "preContext": "last delta duration ",
+    "postContext": " ms",
+    "regexValue": "-?\\d+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxm4s7mrswy5dbl5shk4tboruw63q0",
+    "constraints": null,
+    "info": null
+  },
+  {
+    "displayName": "vmw_vr_delta_size",
+    "preContext": "ms, size ",
+    "postContext": " \\(file",
+    "regexValue": "-?\\d+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxm4s7mrswy5dbl5zws6tf",
+    "constraints": null,
+    "info": null
+  },
+  {
+    "displayName": "vmw_vr_estimated_bandwidth",
+    "preContext": "estimated bandwidth is ",
+    "postContext": " MB/s",
+    "regexValue": "-?\\d*\\.?\\d+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxm4s7mvzxi2lnmf2gkzc7mjqw4zdxnfshi2a0",
+    "constraints": null,
+    "info": null
+  },
+  {
+    "displayName": "vmw_vr_estimated_duration",
+    "preContext": "estimated duration is now ",
+    "postContext": "s\\, estimated",
+    "regexValue": "-?\\d+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxm4s7mvzxi2lnmf2gkzc7mr2xeylunfxw4000",
+    "constraints": null,
+    "info": null
+  },
+  {
+    "displayName": "vmw_vr_rpo_status",
+    "preContext": "vSphere Replication RPO is ",
+    "postContext": " by",
+    "regexValue": "\\w+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxm4s7ojyg6x3torqxi5lt",
+    "constraints": null,
+    "info": null
+  },
+  {
+    "displayName": "vmw_vr_violation_time",
+    "preContext": "vSphere Replication RPO is violated by ",
+    "postContext": " minute",
+    "regexValue": "-?\\d+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxm4s7ozuw63dboruw63s7oruw2zi0",
+    "constraints": null,
+    "info": null
+  },
+  {
+    "displayName": "vmw_vsphere_lock_time",
+    "preContext": "held for ",
+    "postContext": " ms",
+    "regexValue": "-?\\d+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxm43qnbsxezk7nrxwg227oruw2zi0",
+    "constraints": {
+      "searchTerms": "molock"
+    },
+    "info": null
+  },
+  {
+    "displayName": "vmw_vsphere_op_time",
+    "preContext": "took ",
+    "postContext": " ms",
+    "regexValue": "-?\\d+",
+    "internalName": "ibadcoc7mnxw2ltwnv3wc4tffz3hg4dimvzgk5tno5pxm43qnbsxezk7n5yf65djnvsq0000",
+    "constraints": {
+      "filters": [
+        {
+          "internalName": "appname",
+          "displayName": "appname",
+          "operator": "CONTAINS",
+          "value": "vpx*,vmk*,fdm,vsan*,sfcb*,dcui,iscsid",
+          "fieldType": "NUMBER",
+          "isExtracted": false,
+          "hidden": false
+        }
+      ]
+    },
+    "info": null
+  }
+],

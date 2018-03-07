@@ -1,0 +1,7 @@
+"agentClasses": [
+  {
+    "name": "vSphere 5.x - vCenter (Linux) SSO",
+    "info": "<span>Meant for standalone Linux-based SSO systems.</span><br>",
+    "agentConfig": "[filelog|vcenter5-linux-sso]\ndirectory=/var/log/vmware/sso\ninclude=*.log*\nexclude=vmware-identity-sts.log*;vmware-sts-idmd.log*\nevent_marker=^(\\[)?\\d{4}-\\d{2}-\\d{2}\ntags={\"vmw_product\":\"vcenter\"}\n\n[filelog|vcenter5-linux-sso-sts]\ndirectory=/var/log/vmware/sso\ninclude=vmware-identity-sts.log*\nevent_marker=^(\\[)?\\d{4}-\\d{2}-\\d{2}\nparser=vcenter5-linux-sts-parser\nexclude_fields=date;time;log_message\ntags={\"vmw_product\":\"vcenter\"}\n\n[filelog|vcenter5-linux-sso-idmd]\ndirectory=/var/log/vmware/sso\ninclude=vmware-sts-idmd.log*\nevent_marker=^(\\[)?\\d{4}-\\d{2}-\\d{2}\nparser=vcenter5-linux-idmd-parser\nexclude_fields=date;time;log_message\ntags={\"vmw_product\":\"vcenter\"}\n\n[parser|vcenter5-linux-sts-parser]\nbase_parser=clf\nformat=[%{date}i %{thread}i %{domain}i             %{session}i %{severity}i %{component}i] %M\n\n[parser|vcenter5-linux-idmd-parser]\nbase_parser=clf\nformat=[%{date}i %{domain}i             %{session}i %{severity}i] [%{component}i] %M\n"
+  }
+],
