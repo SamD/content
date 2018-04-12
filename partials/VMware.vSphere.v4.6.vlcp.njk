@@ -1,7 +1,7 @@
 {
     "query": "mutation import($schemaVersion:Float!, $tenant:String!, $name:String!, $namespace:String!, $version:Float!, $content:ContentPackTypeInput!) { importContentPack(schemaVersion:$schemaVersion, tenant:$tenant, name:$name, namespace:$namespace, version:$version, content:$content) {  name  } }",  "operationName": "import",
     "variables": {
-        "schemaVersion": "{{ schemaVersion }}"
+        "schemaVersion": "{{ schemaVersion }}",
         "tenant": "{{ tenant }}",
         "name": "{{ name }}",
         "namespace": "{{ namespace }}",
